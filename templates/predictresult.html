@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="shortcut icon" type="image/jpg" href="static/images/thyroidIcon.png" />
+    <link rel="stylesheet" type="text/css" href="static/css_sementara/predictresult.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+
+    <!-- Vendor CSS Files -->
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <style>
+    
+
+    footer {
+      flex: 1; /* Pushes the footer to the bottom */
+    }
+
+    footer {
+      background-color: #f8f9fa;
+      padding: 10px 0;
+      text-align: center;
+      color: #6c757d;
+      border-top: 1px solid #dee2e6;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+    <header id="header" class="header sticky-top">
+
+        <div class="topbar d-flex align-items-center">
+          <div class="container d-flex justify-content-center justify-content-md-between">
+            <div class="contact-info d-flex align-items-center">
+              <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:2023184619@student.uitm.edu.my">2023184619@student.uitm.edu.my</a></i>
+              <i class="bi bi-phone d-flex align-items-center ms-4"><span>+60 13-444-5160</span></i>
+            </div>
+            <div class="social-links d-none d-md-flex align-items-center">
+            
+              <a href="https://www.linkedin.com/in/azim-bin-md-nasib-b1114120b/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div><!-- End Top Bar -->
+    
+       
+        
+        </div>
+    
+    <div class="container text-center my-5" style="font-family: 'Roboto', sans-serif; max-width: 800px;">
+      <h1 class="mb-4" style="font-weight: 700;">Patient Diagnosis</h1>
+      
+      <h2 style="color: #2c3e50; font-weight: 600;">{{ output }}</h2>
+      <hr style="border: 1px solid #ddd; margin: 20px 0;">
+  
+      {% if "Compensated Hypothyroid" in output %}
+      <div class="my-4">
+          <h3 style="color: #34495e; font-weight: 500;">What is Compensated Hypothyroid?</h3>
+          <p class="section-text">
+            This condition occurs when the thyroid gland maintains normal hormone levels despite elevated TSH. 
+            <span id="more" class="more-text" style="display: none">
+                Compensated hypothyroidism happens when the body compensates for an underactive thyroid by producing higher levels of TSH (Thyroid Stimulating Hormone) to maintain normal thyroid hormone levels (T3 and T4). This condition often goes unnoticed because the patient may not experience symptoms of hypothyroidism. However, it can be a sign of developing thyroid dysfunction that may progress to overt hypothyroidism if not addressed.
+                <br><br>
+                Although compensated hypothyroidism may not present obvious symptoms, it can increase the risk of other health problems. If left untreated, it may lead to conditions such as heart disease, infertility, cognitive issues, and more severe thyroid dysfunction. Early detection through blood tests, including TSH levels, is crucial to managing the condition and preventing progression.
+                <br>
+            </span>
+            <button id="read-more-btn" class="read-more-btn">
+                Read More
+            </button>
+        </p>
+          <h3 style="color: #34495e; font-weight: 500;">What causes Compensated Hypothyroid?</h3>
+          <p style="color: #7f8c8d;">Possible causes include iodine deficiency, autoimmune conditions, or genetic predisposition.</p>
+          <h3 style="color: #34495e; font-weight: 500;">What are the complications?</h3>
+          <p style="color: #7f8c8d;">Complications include progression to overt hypothyroidism, cardiovascular issues, or infertility.</p>
+          <h3 style="color: #34495e; font-weight: 500;">Prevention</h3>
+          <ul style="color: #7f8c8d;">
+            <li><strong>Ensure Adequate Iodine Intake:</strong> Consume iodine-rich foods like iodized salt, seaweed, dairy, and fish to prevent iodine deficiency, a common cause of hypothyroidism.</li>
+            <li><strong>Regular Check-ups and Professional Guidance:</strong> If the patient have a family history of thyroid disorders or other risk factors, regular check-ups with an endocrinologist or healthcare provider can help patient monitor thyroid function and address any potential issues early.</li>
+            <li><strong>Maintain a Healthy Lifestyle:</strong> Eat a balanced diet with key nutrients like selenium and zinc, exercise regularly, manage stress, and avoid smoking to support thyroid health.</li>
+            <li><strong>Monitor and Manage Health Conditions:</strong> Keep chronic conditions such as diabetes, high blood pressure, and high cholesterol under control, as they can impact thyroid function.</li>
+          </ul>
+      </div>
+
+      <script>
+        // Select the "Read More" button and the content to show
+        const readMoreBtn = document.getElementById('read-more-btn');
+        const moreText = document.getElementById('more');
+    
+        // Add click event listener to the button
+        readMoreBtn.addEventListener('click', function() {
+            // Toggle the visibility of the extra content
+            if (moreText.style.display === "none") {
+                moreText.style.display = "inline"; // Show the extra content
+                readMoreBtn.textContent = "Read Less"; // Change button text
+            } else {
+                moreText.style.display = "none"; // Hide the extra content
+                readMoreBtn.textContent = "Read More"; // Reset button text
+            }
+        });
+    </script>
+    
+      {% elif "No Thyroid Disease" in output %}
+      <div class="my-4">
+          <h3 style="color: #34495e; font-weight: 500;">What does it mean?</h3>
+          <p style="color: #7f8c8d;">No thyroid disease indicates that the thyroid gland is functioning normally without any detectable issues.</p>
+      </div>
+      {% elif "Primary Hypothyroid" in output %}
+      <div class="my-4">
+          <h3 style="color: #34495e; font-weight: 500;">What is Primary Hypothyroid?</h3>
+          <p style="color: #7f8c8d;">Primary hypothyroidism occurs due to a dysfunction of the thyroid gland itself, leading to inadequate hormone production.</p>
+          <h3 style="color: #34495e; font-weight: 500;">Causes</h3>
+          <p style="color: #7f8c8d;">Causes include autoimmune diseases like Hashimoto's thyroiditis, iodine deficiency, or thyroid surgery.</p>
+          <h3 style="color: #34495e; font-weight: 500;">Complications</h3>
+          <p style="color: #7f8c8d;">Potential complications include fatigue, weight gain, depression, and cardiovascular problems.</p>
+      </div>
+      {% elif "Secondary Hypothyroid" in output %}
+      <div class="my-4">
+          <h3 style="color: #34495e; font-weight: 500;">What is Secondary Hypothyroid?</h3>
+          <p style="color: #7f8c8d;">This condition arises from issues in the pituitary gland or hypothalamus, causing insufficient TSH secretion.</p>
+          <h3 style="color: #34495e; font-weight: 500;">Causes</h3>
+          <p style="color: #7f8c8d;">Common causes include pituitary tumors, head trauma, or radiation therapy.</p>
+          <h3 style="color: #34495e; font-weight: 500;">Complications</h3>
+          <p style="color: #7f8c8d;">Complications include decreased metabolism, fatigue, and hormonal imbalances.</p>
+      </div>
+      {% endif %}
+  
+      <div class="d-flex justify-content-center mt-4">
+          <a href="/" class="btn btn-primary mx-2" style="border-radius: 25px; padding: 10px 20px; font-size: 1rem;">Home</a>
+          <a href="/predict" class="btn btn-secondary mx-2" style="border-radius: 25px; padding: 10px 20px; font-size: 1rem;">Predict Again</a>
+      </div>
+  </div>
+  
+
+  
+
+</header>
+   
+
+
+   
+  
+</body>
+
+</html>

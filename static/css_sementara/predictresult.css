@@ -1,0 +1,141 @@
+
+
+
+
+    a{
+        text-decoration: none;
+        justify-content:center;
+    }
+
+    .Btn {
+        display: flex;
+        justify-content:center;
+       
+       
+    }
+
+    .Btn a{
+        padding: 15px 40px;
+        margin-left: 30px;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+        border: none;
+        background: #3868cd;
+        border-radius: 10px;
+        position: relative;
+        }
+
+   .Btn a span{
+       width: 0;
+       height: 100%;
+       position: absolute;
+       top: 0;
+       left: 0;
+   }
+  
+
+
+   .batern {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.batern a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    background-color: #0070fa;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.batern a:hover span {
+    transform: translateX(0);
+}
+
+.batern a:hover {
+    color: #ffffff;
+}
+
+.batern a:hover span {
+    border-radius: 5px;
+}
+
+
+/* General section styles */
+.my-4 {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.section-title {
+    color: #34495e;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.section-text {
+    color: #7f8c8d;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.more-text {
+    display: none;
+    color: #7f8c8d;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.read-more-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.read-more-btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.read-more-btn:focus {
+    outline: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.25rem;
+    }
+
+    .section-text {
+        font-size: 0.95rem;
+    }
+
+    .read-more-btn {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+}
+

@@ -1,0 +1,37 @@
+
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual environment folder
+env/
+venv/
+.venv/
+
+# Flask instance folder
+instance/
+
+# Environment variables file
+.env
+.flaskenv
+
+# IDE files
+.idea/
+.vscode/
+
+# Log files
+*.log
+
+# Miscellaneous
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# Docker files
+docker-compose.override.yml
+Dockerfile
+
+# Build artifacts
+*.tar.gz
+*.egg-info/
